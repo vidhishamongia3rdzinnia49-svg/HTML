@@ -1,0 +1,40 @@
+body{
+    background-color:aqua;
+    background:url('background.png');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+
+}
+div{
+    width: 500px; 
+    height: 200px;
+}
+#div1{
+    background:linear-gradient(yellow,red,blue,orange,green)
+}
+#div2{
+    background:linear-gradient(to right,yellow,red,blue,orange,green);
+}
+#div3{
+    background:linear-gradient(to bottom right,yellow,red,blue,orange,green);
+}
+#div4{
+    background:radial-gradient(yellow,red,blue,orange,green);
+}
+#div5{
+    background:radial-gradient(circle,yellow,red,blue,orange,green);
+}
+@keyframes example{
+    0%{background-color:red}
+    25%{background-color:yellow}
+    50%{background-color:green}
+    75%{background-color:blueviolet}
+}
+#div6{
+    background:red ;
+    animation-name: example;
+    animation-duration: 10s;
+}
