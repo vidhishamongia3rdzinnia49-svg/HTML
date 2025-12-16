@@ -1,0 +1,142 @@
+{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    outline:0;
+    transition:all 0.5s ease ;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+body{
+    background-image: linear-gradient(to bottom right,blue,pink,purple);
+}
+.container{
+    height:100vh ;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+
+}
+.calculator{
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius:10px;
+    box-shadow:  0 0 30px black;
+}
+.theme-toggler{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: aliceblue;
+    cursor: pointer;
+    z-index: 1; 
+
+}
+.theme-toggler.active{
+    color: black;
+}
+.theme-toggler.active::before{
+    background-color: rgb(187, 136, 136);
+}
+.theme-toggler::before{
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    border-radius: 50%;
+    background-color: blueviolet;
+    z-index: -1;
+
+}
+#display{
+    margin: 0 10px;
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 20px;
+    overflow-x:scroll;
+
+}
+#display ::-webkit-scrollbar{
+    display: block;
+   height: 3px;
+
+}
+button{
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+
+     
+}
+button:hover{
+    transform: scale(1,1);
+}
+button#equal{
+    height: 130px;
+}
+.calculator{background-color: antiquewhite;}
+.calculator #display{
+    color: black;
+}
+.calculator button#clear{
+    background-color: rgb(211, 128, 128);
+
+color:red ;
+}
+.calculator button.btn-number{
+    background-color: beige;
+    color: black;
+
+}
+.calculator button.btn-operator{
+    background-color: rgb(185, 117, 176);
+    color: rgb(110, 8, 71);
+    
+}
+.calculator button.btn-equal{
+    background-color: beige;
+    color: black;
+    
+}
+.calculator.dark{
+    background-color: black;
+}
+.calculator.dark #display{
+    color: rgb(143, 185, 173);
+}
+.calculator.dark button#clear{
+    background-color: rgba(0, 0, 0, 0.527);
+    color: red;
+}
+.calculator.dark button.btn-number{
+    background-color: blue;
+    color: azure;
+}
+.calculator.dark button.btn-operator{
+    background-color: rgb(6, 6, 48);
+    color: rgb(196, 86, 177);
+}
+.calculator.dark button.btn-equal{
+    background-color: rgba(6, 6, 46, 0.534);
+    color: rgb(217, 150, 223);
+}
+
