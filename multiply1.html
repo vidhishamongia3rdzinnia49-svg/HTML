@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiply Numbers</title>
+</head>
+
+<body bgcolor="blue">
+    <center>
+        <h1 style="color: antiquewhite;">CODINGAL</h1>
+        <p id="greeting" style="color:white; font-size: 30px;">
+            Result will appear here
+        </p>
+    </center>
+
+    <script>
+        // Take input and convert to number
+        const n1 = Number(prompt("Please enter first number:"));
+        const n2 = Number(prompt("Please enter second number:"));
+
+        // Function declaration
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        // Check input and display result
+        if (!isNaN(n1) && !isNaN(n2)) {
+            let result = multiply(n1, n2);
+            document.getElementById("greeting").innerHTML =
+                "Multiplication Result: " + result;
+        } else {
+            document.getElementById("greeting").innerHTML =
+                "Please enter valid numbers!";
+        }
+    </script>
+</body>
+</html>
