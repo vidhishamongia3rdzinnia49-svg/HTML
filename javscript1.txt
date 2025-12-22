@@ -1,0 +1,17 @@
+
+for (let i=3;i<=30;i+=3){
+
+console.log(i)}
+for (let i=1;i<=30;i++){
+
+if (i%3==0)
+
+console.log(i);}
+
+
+person1={"NAME":"VIDHISHA MONGIA","AGE":13}
+person2={"NAME":"RIDHI MONGIA","AGE":17,"CLASS":12}
+person1.AGE
+13
+person1['AGE']
+13
