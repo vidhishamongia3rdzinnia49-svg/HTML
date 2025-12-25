@@ -1,0 +1,43 @@
+for (let i=99;i>=79;i-=2){
+
+console.log(i)}
+
+
+var cars=[
+    "CODING",
+    "MAGIC",
+    "LEARN"
+    
+    ]
+    console.log(cars[2]);
+
+
+
+var fruits=["APPLE","mango","banana","ORANGE"]
+console.log(fruits.join("*"));
+
+
+// your code goes here
+
+var cars=[
+    "CODING",
+    "MAGIC",
+    "LEARN"
+    
+    ]
+    console.log(cars[2])
+var fruits=["APPLE","mango","banana","ORANGE"]
+console.log(fruits.join("*"))
+console.log(fruits.pop())
+   console.log(fruits.pop())
+      console.log(cars);
+
+function adding(a,b,c)
+{
+    var sum=a+b+c
+    return sum
+}
+function avg(a,b,c){
+    return adding(a,b,c)/3;
+}
+console.log(avg(15,8,7))
