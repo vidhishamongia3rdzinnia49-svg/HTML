@@ -1,0 +1,23 @@
+// Function to add all numbers
+function sumALL() {
+    let sum = 0;
+
+    for (let i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+
+    return sum;
+}
+
+// Print sum
+console.log(sumALL(1, 123, 500, 115, 48, 44));
+
+// Trigonometric values (no degree conversion as requested)
+let value = Math.sin(45);
+console.log("Sin 45 is:", value);
+
+let value1 = Math.cos(45);
+console.log("Cos 45 is:", value1);
+
+let value2 = Math.tan(45);
+console.log("Tan 45 is:", value2);
