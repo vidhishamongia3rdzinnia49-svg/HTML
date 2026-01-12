@@ -1,0 +1,10 @@
+const s=document.getElementById("main").innerHTM
+const b=document.getElementById("submain").innerHTML
+main.style.position = "absolute";
+main.style.top = "10%";
+submain.style.position = "absolute";
+submain.style.top = "0%";
+var x=70;
+var y=80;
+document.getElementById("main").innerHTML=x+y;
+document.getElementById("submain").innerHTML=String(x)+String(y);
