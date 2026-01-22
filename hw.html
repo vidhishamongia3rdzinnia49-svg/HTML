@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Try-Catch Error Demo</title>
+  <style>
+     body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: grid;
+      place-items: center; /* centers container */
+      
+      background: url("BG1.png") no-repeat center/cover;
+      background-attachment: fixed;
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      background: rgba(238, 221, 221, 0.85);
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: red;
+      margin-top: 15px;
+      min-height: 24px; 
+    }
+
+    button {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      background: #667eea;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #5a67d8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>10 / 0 Try-Catch Demo</h2>
+    <h2>Try-Catch Error Demo</h2>
+    <button id="runError">Run Code</button>
+    <p id="errorMsg"></p>
+  </div>
+
+  <script>
+    document.getElementById("runError").addEventListener("click", function() {
+      const errorMsg = document.getElementById("errorMsg");
+      errorMsg.innerText = ""; // clear previous error
+
+      try {
+        let x = 10 / 0;
+        if(!isFinite(x)) throw "Math Error"; // create error
+      } catch(e) {
+        errorMsg.innerText = e; // show error on page
+      }
+    });
+  </script>
+
+</body>
+</html>
