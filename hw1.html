@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW-1</title>
+    <title>Document</title>
+    <style>
+        body{
+            color: black;
+        }
+    </style>
 </head>
-<body bgcolor="yellow">
-      <p align="center"><i>La suno brilas,</i> <em>kaj la birdoj kantas en la arboj</p></em>.<p align="center"> La aero estas freŝa kaj agrabla.</p>
-        
-        <bold> Mi promenas </bold>tra la <strong>parko, admirante la</strong> florojn kaj la verdajn herbejon. Estas bela tago por esti ekstere kaj ĝui la naturon. 
-    </p>
+<body><div style="background-image: url(bg2.png);
+height:100vh;
+background-size:cover;
+background-position:center;"> </div>
+    <script>
+    async function getUserData() {
+  console.log("Fetching user data...");
+  const response = await fetch('https://www.codingal.com/student/dashboard/classes/41465276/'); // Pause until fetch is complete
+  const data = await response.json(); // Pause until response body is parsed
+  console.log("User data:", data);
+}
+
+// The rest of the script continues to run immediately
+console.log("Program started"); 
+getUserData();
+</script>
 </body>
 </html>
