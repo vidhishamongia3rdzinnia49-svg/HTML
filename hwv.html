@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            position: fixed;
+        }
+    </style>
+</head>
+<body> <div style="    
+background-image:url('bg1.jpg');
+height:100vh;
+background-size:cover;
+background-position:center;
+">
+<form onsubmit="return checkForm()">
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="number" id="age" placeholder="Enter Age">
+    <button type="submit">Login</button>
+</form>
+
+    <script>
+function checkForm() {
+
+    let name = document.getElementById("name").value;
+    let age = document.getElementById("age").value;
+
+    if (name == "") {
+        alert("Name is required");
+        return false;
+    }
+
+    if (age <= 18) {
+        alert("Age must be 18 or above");
+        return false;
+    }
+
+    alert("Login Successful");
+    return true;
+}
+</script>
+</div>
+
+</body>
+</html>
