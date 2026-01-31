@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="changeBg()">Change Background</button>
+
+<script>
+function changeBg() {
+  const images = ["bg2.png","BG1.jpg","bg2.png","car.png","background.png"];
+  const randomIndex = Math.floor(Math.random() * images.length);
+  document.body.style.backgroundImage =
+    "url(" + images[randomIndex] + ")";
+}
+</script>
+
+</body>
+</html>
