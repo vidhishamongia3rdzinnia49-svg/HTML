@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>#MyclockDisplay {
+
+font-size: 48px;
+
+color: #ffffff;
+
+background-color: rgba(0, 18, 97, 0.582);
+
+padding: 20px;
+
+font-family: 'Courier New', Courier, monospace;
+
+display:inline-block;
+    }</style>
+</head>
+<body onload="showTime()" style="    
+background-image:url('bg2.png');
+height:100vh;
+background-size:cover;
+background-position:center;
+">
+   <center><h1> <div id="MyclockDisplay"></div></h1></center>
+<script>
+    function showTime(){
+        var date=new Date();
+        var h=date.getHours();
+         var m=date.getMinutes();
+          var s=date.getSeconds();
+          var session="AM"
+  
+    if (h == 0){
+        h = 12;
+    }
+    if (h > 12){
+        h=h-12;
+        session="PM";
+    }
+    h=(h<10)?"0"+h:h;
+     m=(m<10)?"0"+m:m;
+      s=(s<10)?"0"+s:s;
+      var time=h+":"+m+":"+s+""+session;
+      document.getElementById("MyclockDisplay").innerHTML=time;
+      setTimeout(showTime,1000);
+        }
+</script>
+    
+</body>
+</html>
