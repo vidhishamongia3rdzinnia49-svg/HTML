@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Date Info</title>
+
+<style>
+body{
+    background-image: url(calendar_aesthetic_website_background.png);
+    color: aliceblue;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Current Date Information:</h1>
+<p>Current Year: <span id="year-output"></span></p>
+<p>Current Month: <span id="month-output"></span></p>
+<p>Current Day: <span id="day-output"></span></p>
+
+<script>
+const currentDateObj = new Date();
+
+const yearValue = currentDateObj.getFullYear();
+const monthValue = currentDateObj.getMonth() + 1;
+const dayValue = currentDateObj.getDate();
+
+document.getElementById("year-output").textContent = yearValue;
+document.getElementById("month-output").textContent = monthValue;
+document.getElementById("day-output").textContent = dayValue;
+</script>
+
+</body>
+</html>
